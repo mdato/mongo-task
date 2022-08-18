@@ -2,8 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import styles from "../styles/Home.module.css";
 
-const url = "http://localhost:3000/api";
-//const url = "https://todo-nextjs-mdato.vercel.app/api"
+//const url = "http://localhost:3000/api";
+const url = "https://mongo-task.vercel.app/api"
 
 export default function Home(props) {
 	const [tasks, setTasks] = useState(props.tasks);
