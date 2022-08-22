@@ -166,6 +166,11 @@
 
 @media only screen and (max-width: 576px) { 
 
+	.main {
+		background-image: none;
+
+	}
+
 	.container {
 		width: 98vw;
 		/* max-width: 300px; */
