@@ -7,6 +7,10 @@
 	/* justify-content: center; */
 	background-color: #212121;
 	overflow-y: hidden;
+	background-image: url('https://images.unsplash.com/photo-1631988594390-1e11a545ecd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80');
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .heading {
@@ -19,6 +23,7 @@
 }
 
 .container {
+	opacity: 0.8;
 	width: 80vw;
 	max-height: 76vh;
 	max-width: 450px;
@@ -59,7 +64,7 @@
 	font-size: 16px;
 	padding-left: 5px;
 	box-shadow: 0px 2px 35px 6px rgba(116, 210, 127, 0.3);
-	height: 35px;
+	height: 35px;	
 }
 
 .input::placeholder{

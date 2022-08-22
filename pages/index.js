@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import styles from "../styles/Home.module.css";
 
@@ -8,6 +8,12 @@ const url = "https://mongo-task.vercel.app/api"
 export default function Home(props) {
 	const [tasks, setTasks] = useState(props.tasks);
 	const [task, setTask] = useState({ task: "" });
+
+	const ref = useRef(null);
+
+    useEffect(() => {
+        ref?.current?.focus?.();
+    }, [ref]);
 
 	const handleChange = ({ currentTarget: input }) => {
 		input.value === ""
@@ -80,6 +86,7 @@ export default function Home(props) {
 						placeholder="write a task..."
 						onChange={handleChange}
 						value={task.task}
+						ref={ref}
 					/>
 					<button type="submit" className={styles.submit_btn}>
 						{task._id ? "Update" : "Add"}
